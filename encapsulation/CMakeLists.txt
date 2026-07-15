@@ -22,10 +22,6 @@ set(learn_cpp.object_oriented_programming.encapsulation.CMAKE_GENEXP_OUTPUT_NAME
 set(learn_cpp.object_oriented_programming.encapsulation.CMAKE_INSTALL_INFIX_DIR
   ${PROJECT_NAME}/${PROJECT_VERSION})
 
-set(CMAKE_INSTALL_PREFIX
-  ${CMAKE_INSTALL_PREFIX}/${learn_cpp.object_oriented_programming.encapsulation.CMAKE_INSTALL_INFIX_DIR}
-  CACHE PATH "Install prefix" FORCE)
-
 string(TOLOWER "${PROJECT_NAME}_component"
   learn_cpp.object_oriented_programming.encapsulation.CMAKE_INSTALL_COMPONENT_NAME)
 

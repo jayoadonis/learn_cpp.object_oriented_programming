@@ -76,13 +76,14 @@ install(TARGETS
   # deps_library_target_i
   # deps_library_target_ii
 
-  ARCHIVE DESTINATION lib
+  ARCHIVE DESTINATION ${learn_cpp.object_oriented_programming.encapsulation.CMAKE_INSTALL_INFIX_DIR}/lib
   COMPONENT ${learn_cpp.object_oriented_programming.encapsulation.CMAKE_INSTALL_COMPONENT_NAME}
 
-  LIBRARY DESTINATION lib
+
+  LIBRARY DESTINATION ${learn_cpp.object_oriented_programming.encapsulation.CMAKE_INSTALL_INFIX_DIR}/lib
   COMPONENT ${learn_cpp.object_oriented_programming.encapsulation.CMAKE_INSTALL_COMPONENT_NAME}
 
-  RUNTIME DESTINATION bin
+  RUNTIME DESTINATION ${learn_cpp.object_oriented_programming.encapsulation.CMAKE_INSTALL_INFIX_DIR}/bin
   COMPONENT ${learn_cpp.object_oriented_programming.encapsulation.CMAKE_INSTALL_COMPONENT_NAME})
 
 #REM: [KEYPOINT] Not needed for executable targets
