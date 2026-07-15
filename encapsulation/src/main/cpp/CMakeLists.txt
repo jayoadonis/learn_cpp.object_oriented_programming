@@ -46,24 +46,24 @@ list(FILTER
   learn_cpp.object_oriented_programming.encapsulation.CMAKE_PRIVATE_OBJ_CXX_MAIN_SOURCES
   EXCLUDE REGEX "main\\.(cc|cxx|cpp)$")
 
-add_library(${PROJECT_NAME}_target_main_lib OBJECT)
+add_library(${PROJECT_NAME}_target_main_obj OBJECT)
 add_library(
   learn_cpp.object_oriented_programming::${PROJECT_NAME}
-  ALIAS ${PROJECT_NAME}_target_main_lib)
+  ALIAS ${PROJECT_NAME}_target_main_obj)
 
-set_target_properties(${PROJECT_NAME}_target_main_lib
+set_target_properties(${PROJECT_NAME}_target_main_obj
   PROPERTIES
   OUTPUT_NAME
   ${learn_cpp.object_oriented_programming.encapsulation.CMAKE_GENEXP_OUTPUT_NAME})
 
-target_sources(${PROJECT_NAME}_target_main_lib
+target_sources(${PROJECT_NAME}_target_main_obj
   PRIVATE
   # FILE_SET TYPE CXX FILES
   ${learn_cpp.object_oriented_programming.encapsulation.CMAKE_PRIVATE_OBJ_CXX_MAIN_SOURCES})
 
-target_include_directories(${PROJECT_NAME}_target_main_lib
+target_include_directories(${PROJECT_NAME}_target_main_obj
   # PRIVATE
-  PUBLIC
+  PUBLIC #REM: [KEYPOINT]
   ${CMAKE_CURRENT_SOURCE_DIR}/private
 
   # PUBLIC
@@ -85,6 +85,7 @@ install(TARGETS
   RUNTIME DESTINATION bin
   COMPONENT ${learn_cpp.object_oriented_programming.encapsulation.CMAKE_INSTALL_COMPONENT_NAME})
 
+#REM: [KEYPOINT] Not needed for executable targets
 # install(
 # DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/public/
 # DESTINATION include
