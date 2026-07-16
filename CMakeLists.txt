@@ -3,3 +3,4 @@ project(object_oriented_programming
   LANGUAGES CXX)
 
 add_subdirectory(encapsulation)
+add_subdirectory(inheritance)
