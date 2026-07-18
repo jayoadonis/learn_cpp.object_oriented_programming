@@ -8,5 +8,5 @@
 ## Feature
 + [x] Encapsulation
 + [x] Inheritance
-+ [ ] Abstraction
++ [x] Abstraction
 + [ ] Polymorphism
