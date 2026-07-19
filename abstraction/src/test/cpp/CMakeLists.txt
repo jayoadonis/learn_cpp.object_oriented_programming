@@ -1,5 +1,5 @@
 file(GLOB_RECURSE
-  learn_cpp.object_oriented_programming.abstraction.CMAKE_PRIVATE_CXX_MAIN_SOURCES
+  learn_cpp.object_oriented_programming.abstraction.CMAKE_PRIVATE_CXX_TEST_SOURCES
   CONFIGURE_DEPENDS
   ${CMAKE_CURRENT_SOURCE_DIR}/private/*.cc
   ${CMAKE_CURRENT_SOURCE_DIR}/private/*.cxx
@@ -19,7 +19,7 @@ target_compile_options(${PROJECT_NAME}_target_test_app
 target_sources(${PROJECT_NAME}_target_test_app
   PRIVATE
   # FILE_SET TYPE CXX FILES
-  ${learn_cpp.object_oriented_programming.abstraction.CMAKE_PRIVATE_CXX_MAIN_SOURCES})
+  ${learn_cpp.object_oriented_programming.abstraction.CMAKE_PRIVATE_CXX_TEST_SOURCES})
 
 target_include_directories(${PROJECT_NAME}_target_test_app
   PRIVATE
