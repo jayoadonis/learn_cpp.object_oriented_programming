@@ -22,21 +22,21 @@ set(learn_cpp.object_oriented_programming.abstraction.CMAKE_GENEXP_PROJECT_OUTPU
 set(learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_INFIX_DIR
   ${PROJECT_NAME}/${PROJECT_VERSION})
 
-if(WIN32)
+# if(WIN32)
   set(learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_DESTINATION_LIB_DIR
     ${learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_INFIX_DIR}/lib)
   set(learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_DESTINATION_BIN_DIR
     ${learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_INFIX_DIR}/bin)
   set(learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_DESTINATION_INCLUDE_DIR
     ${learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_INFIX_DIR}/include)
-else()
-  set(learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_DESTINATION_LIB_DIR
-    lib/${learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_INFIX_DIR})
-  set(learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_DESTINATION_BIN_DIR
-    bin/${learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_INFIX_DIR})
-  set(learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_DESTINATION_INCLUDE_DIR
-    include/${learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_INFIX_DIR})
-endif()
+# else()
+#   set(learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_DESTINATION_LIB_DIR
+#     lib/${learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_INFIX_DIR})
+#   set(learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_DESTINATION_BIN_DIR
+#     bin/${learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_INFIX_DIR})
+#   set(learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_DESTINATION_INCLUDE_DIR
+#     include/${learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_INFIX_DIR})
+# endif()
 
 string(TOLOWER ${PROJECT_NAME}_component
   learn_cpp.object_oriented_programming.abstraction.CMAKE_INSTALL_COMPONENT_NAME)
