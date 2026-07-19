@@ -8,7 +8,7 @@ namespace learn_cpp::object_oriented_programming::abstraction::test::unit {
 
   namespace {
 
-    void test_0001_concrete_class() {
+    void test_0001_abstract_class() {
 
       using namespace learn_cpp::object_oriented_programming;
 
@@ -18,12 +18,12 @@ namespace learn_cpp::object_oriented_programming::abstraction::test::unit {
         && "Expected to be '\0'");
 
       assert(concrete_class.get_private_long_x() == 1L 
-        && "Expected to be '0'");
+        && "Expected to be '1'");
     }
   }
 
   void test_0001() {
-    test_0001_concrete_class();
+    test_0001_abstract_class();
   }
 }
 

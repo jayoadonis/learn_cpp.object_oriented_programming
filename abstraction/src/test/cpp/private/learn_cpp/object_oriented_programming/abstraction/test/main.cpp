@@ -32,6 +32,11 @@ int main(int arg_c, char** arg_v) {
         throw std::invalid_argument("Unknown argument: " + std::string(option));
     }
   }
+  catch(std::bad_alloc const &except) {
+
+    std::fprintf(stderr, "Fatal Error: %s\n", except.what());
+    return 1;
+  }
   catch(std::exception const &except) {
 
     std::fprintf(stderr, "Fatal Error: %s\n", except.what());
