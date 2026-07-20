@@ -9,4 +9,4 @@
 + [x] Encapsulation
 + [x] Inheritance
 + [x] Abstraction
-+ [ ] Polymorphism
++ [x] Polymorphism

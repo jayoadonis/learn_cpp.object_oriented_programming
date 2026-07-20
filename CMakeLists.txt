@@ -5,3 +5,4 @@ project(object_oriented_programming
 add_subdirectory(encapsulation)
 add_subdirectory(inheritance)
 add_subdirectory(abstraction)
+add_subdirectory(polymorphism)
